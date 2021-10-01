@@ -1,11 +1,9 @@
 import Swal from 'sweetalert2';
-const url = "https://portfolio-app-alelalli.herokuapp.com/api/sendemail";
+const url = process.env.REACT_APP_API_URL;
 
-console.log(url)
+console.log(`Backend en ${url}`);
 
 export const sendData = async (value) => {
-
-    
 
     const resp = await fetch( url, {
         method: "POST",

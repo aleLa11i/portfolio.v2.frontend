@@ -1,13 +1,10 @@
 @import "./base/config";
 @import "./base/base";
-@import "./base/responsive";
 
-@import "./components/navbar";
-@import "./components/home";
-@import "./components/portafolio";
-@import "./components/aboutme";
-@import "./components/skills";
-@import "./components/proyects";
-@import "./components/contact";
-@import "./components/background";
-@import "./components/footer";
+@import "../components/background/background.scss";
+@import "../components/navbar/navbar.scss";
+@import "../components/portfolio/portfolio.scss";
+@import "../components/portfolio/portfolio-index/home.scss";
+@import "../components/portfolio/portfolio-index/aboutme.scss";
+@import "../components/portfolio/portfolio-index/skills.scss";
+
