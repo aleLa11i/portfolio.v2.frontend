@@ -1,0 +1,40 @@
+
+
+.home-conteiner{
+    // height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+}
+
+.home-box{
+    display: flex;
+    flex-direction: column;
+    // display: flex;
+    & a{
+        margin-top: 10%;
+    }
+    & h3{
+        margin-top: 10vh;
+    }
+
+    & img{
+        position: relative;
+        left: 15%;
+        margin-top: 15vh;
+        width: 15%;
+        animation: bounce 1s ;
+        animation-iteration-count: infinite;
+        // animation-direction: alternate;
+
+    }
+}
+
+.btn-cv{
+    text-decoration: none;
+    width: 40%;
+    border-radius: 7px;
+
+}
+
+

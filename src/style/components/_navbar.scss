@@ -1,0 +1,41 @@
+.navbar{
+    z-index: 10;
+    position: fixed;
+    display: flex;
+    outline: 3px solid black;
+    border-radius: 10px;
+    background:rgba($color: rgb(12, 12, 12), $alpha: .6); 
+    height: 6vh;
+    justify-content: center;
+    align-items: center;
+    background-color: $dark-grey;
+    overflow: hidden;
+}
+
+.navbar-conteiner{ 
+    display: flex;
+    justify-content: center;
+    // margin-left: 30vw;
+    margin-top: 20px;
+}
+
+.nav-item{
+    display: flex;
+    align-items: center;
+    height: 6vh;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-home{
+    border-radius: 5px 0px 0px 5px;
+}
+
+.nav-contact{
+    border-radius: 0px 5px 5px 0px;
+
+}
+
+
+

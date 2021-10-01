@@ -1,0 +1,37 @@
+
+
+.proyects-item{
+    display: flex;
+    margin: 20px;
+    padding: none;
+
+    .first{
+        border-radius: 7px 0 0 7px;
+    }
+
+    .last{
+        border-radius: 0 7px 7px 0;
+    }
+
+
+    & a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        margin:none;
+        display: flex;
+        align-items: center;
+        text-decoration: unset;
+        color: white;
+        padding:20px;
+        cursor: pointer;
+        
+    }
+
+    & h3{
+        margin: 20px;
+        width: 800px;
+    }
+    
+}
