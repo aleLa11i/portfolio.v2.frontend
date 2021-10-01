@@ -1,0 +1,89 @@
+.projects{
+    .projects-title{
+        margin: 25px 0px;
+    }
+
+    .project{
+        height: 900px;
+
+        .project-background{
+            width: 80vw;
+            height: 700px;
+            object-fit: cover;
+            filter: brightness(15%);
+        }
+        
+        .right{
+            flex-direction: row;
+        
+            .project-image{
+                left: 30px;
+            }
+        
+            .notebook-img{
+                right: 20px;
+            }
+        }
+        
+        .left{
+            flex-direction: row-reverse;
+        
+            .project-image{
+                left: 70px;
+            }
+        
+            .notebook-img{
+                left: 20px;
+            }
+        }
+        
+        .project-info{
+            display: flex;
+            position: relative;
+            bottom: 700px;
+            height: 700px;
+        
+            .description-div{
+                width: calc(100% - 500px);
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: space-evenly;
+                margin: 50px;
+            
+                .description-buttons{
+                    display: flex;
+                    flex-direction: column;
+        
+                    a{
+                        margin: 10px;
+                        height: 30px;
+                    }
+                }
+            }
+            
+            .notebook-div{
+                position: relative;
+                height: 700px;
+                width: 500px;
+                bottom: 4px;
+            
+                .notebook-img{
+                    position: relative;
+                    top: 450px;
+                    width: 500px;
+                    z-index: 2;
+                }
+                
+                .project-image{
+                    width: 400px;
+                    height: 260px;
+                    position: relative;
+                    top: 153px;
+                    z-index: 1;
+                }
+            }
+        }
+    }
+
+}

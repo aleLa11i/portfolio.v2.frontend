@@ -1,0 +1,73 @@
+.skills{
+    margin: 70px;
+    justify-content: center;
+    
+    .skill-item{
+        background-color: rgba(255,255,255,0.2);
+        color: #dadada;
+        border: 1px solid #111;
+        border-radius: 10px;
+        padding: 10px;
+        display: flex;
+        text-align: center;
+        cursor: pointer;
+        height: 8vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        z-index: 2;
+
+        &:hover{
+            transition: transform 300ms;
+            backdrop-filter: blur(15px);
+            transform: scale(1.2);
+            height: 140%;
+            z-index: 100;
+
+            .progress-bar{
+                z-index: 50;
+                display: flex;
+            }
+    
+            .skill-progress{
+                display: flex;
+            }
+        }
+
+        .skill-img{
+            width: 70px;
+        }
+
+        .skill-progress{
+            display: none;
+        }
+
+        .progress-bar{
+            display: none;
+            width: 80%;
+            height: 8px;
+            background-color: #111;
+            border-radius: .2em;
+            color:white;
+
+            &::before{
+                content: attr(data-label);
+                text-size-adjust: 1em;
+                height: 6px;
+                display: flex;
+                align-items: center;
+                width: calc(var(--width,0) * 1%);
+                min-width: 1%;
+                max-width: calc(var(--max-width,0) * 1%);
+                background-color: $primary;
+                border-radius: .2em;
+                margin: 1px;
+            }
+        }
+    }
+    
+    
+    
+}
+

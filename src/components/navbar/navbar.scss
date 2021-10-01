@@ -1,0 +1,55 @@
+.navbar{
+    position: fixed;
+    background-color: #212529;
+    width: 100vw;
+    color: white;
+    height: 50px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+
+    a{
+        position: relative;
+        color: white;
+        text-decoration: none;
+        margin: 10px;
+        z-index: 10;
+        overflow: hidden;
+
+        span{
+            position: relative;
+        }
+
+        &:hover{
+            color: $primary;
+        }
+
+        &:hover > i{
+            animation: hover .3s linear;
+        }
+
+        i{
+            content: '';
+            position: absolute;
+            left: -62px;
+            top: -40px;
+            width: 60px;
+            height: 100px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        @keyframes hover {
+            0%{
+                transform: translateX(-10px) rotate(40deg);
+            }
+            100%{
+                transform: translateX(200px) rotate(40deg);
+            }
+        }
+    }
+
+    .icon-navbar{
+        width: 30px;
+        margin: 10px 20px;
+    }
+}
