@@ -1,6 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Navigate, Route, Router, Routes } from 'react-router-dom';
-import { PortfolioApp } from '../PortfolioApp';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import { PortfolioScreen } from '../components/portfolio/PortfolioScreen';
 
 export const AppRouter = () => {
