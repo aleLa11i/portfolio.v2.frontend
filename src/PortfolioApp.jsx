@@ -14,7 +14,7 @@ export const PortfolioApp = () => {
         return () => {
             window.removeEventListener("resize", () => setWidth(window.innerWidth));
         };
-    }, [window])
+    }, [])
 
     console.log( width );
     const responsiveRender = () =>{

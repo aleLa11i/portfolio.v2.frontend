@@ -40,7 +40,7 @@ export const ProjectsScreen = () => {
                     className='notebook-div notebook-div-right'
                   >
                     <img className='notebook-img notebook-img-right' src={notebook} alt="notebook" />
-                    <img className='project-image project-image-right' src={project.image} alt="project-image" />
+                    <img className='project-image project-image-right' src={project.image} alt="project" />
                   </div>
                 </div>
               </div>
