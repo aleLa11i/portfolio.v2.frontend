@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import {data} from "./skills";
 import Grid from '@mui/material/Grid';
+import { useWindowSize } from '../../hooks/useWindowSize';
 
 export const SkillsScreen = () => {
     const [skillProgress, setSkillProgress] = useState(0);
     const [skillInterval, setSkillInterval] = useState(null);
+    const [ width ] = useWindowSize();
 
     const onMouseEnterSkill = (index,percentage) => {
         const progressBar = document.getElementById(`progress-bar-skill-${index}`)
@@ -40,7 +42,7 @@ export const SkillsScreen = () => {
                         <Grid 
                             key={`skill-${index}`} 
                             item 
-                            xs={2}
+                            xs={ width > 1070 ? 2 : 3 }
                         >
                             <div 
                                 className='skill-item' 

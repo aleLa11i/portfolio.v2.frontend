@@ -1,5 +1,17 @@
 .portfolio{
-    background: rgba(0,0,0,0.8);
-    width: 80%;
-    margin: 0px 10%;
+        background: rgba(0,0,0,0.8);
+        width: 80%;
+        margin: 0px 10%;
+
+        @media (max-width: $size-width-1) {
+                width: 90%;
+                margin: 0px 5%;
+        }
+
+        @media (max-width: $size-width-2) {
+                width: 100%;
+                margin: 0px;
+                padding: 0px;
+        }
 }
+

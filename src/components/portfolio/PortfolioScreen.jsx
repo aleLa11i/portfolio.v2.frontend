@@ -6,7 +6,7 @@ import { ProjectsScreen } from '../projects/ProjectsScreen';
 
 export const PortfolioScreen = () => {
     return (
-        <div className="portafolio-screen">
+        <div className="portfolio">
             <HomeScreen />
             <AboutMeScreen />
             <SkillsScreen />

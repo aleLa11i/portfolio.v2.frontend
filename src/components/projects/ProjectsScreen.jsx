@@ -17,12 +17,15 @@ export const ProjectsScreen = () => {
                   <div
                     className='description-div'
                   >
-                    <h1>{project.title}</h1>
-                    <p>{project.desc}</p>
-                    {
-                      project?.version && ( <h3>{`Version: ${project.version}`}</h3> )
-                    }
-                    
+                    <div
+                      className='description-text'
+                    >
+                      <h1>{project.title}</h1>
+                      <p>{project.desc}</p>
+                      {
+                        project?.version && ( <h3>{`Version: ${project.version}`}</h3> )
+                      }
+                    </div>                
                     <div
                       className='description-buttons'
                     >
