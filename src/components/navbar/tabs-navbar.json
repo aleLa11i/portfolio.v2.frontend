@@ -1,0 +1,27 @@
+[
+    {
+        "label":"Home",
+        "value":"/home",
+        "to":"/home"
+    },
+    {
+        "label":"About",
+        "value":"/about",
+        "to":"/about"
+    },
+    {
+        "label":"Skills",
+        "value":"/skills",
+        "to":"/skills"
+    },
+    {
+        "label":"Projects",
+        "value":"/projects",
+        "to":"/projects"
+    },
+    {
+        "label":"Contact",
+        "value":"/contact",
+        "to":"/contact"
+    }
+]
