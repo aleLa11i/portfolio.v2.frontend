@@ -7,6 +7,14 @@
     color: white;
     height: 100px;
 
+    @media (max-width: $size-width-1) {
+        width: 100%;
+    }
+    @media (max-width: $size-width-3) {
+        height: 150px;
+        flex-direction: column;       
+    }
+
     .footer-section-1 {
         display: flex;
         margin: 0px 3%;
@@ -32,6 +40,18 @@
             flex-direction: row;
             align-items: center;
             margin: 5px 0px;
+            
+            .icon{
+                margin-right: 20px;
+
+                @media (max-width: $size-width-3) {
+                    margin-right: 5px;
+                    margin-left: 15px;    
+                }
+            }
+        }
+        @media (max-width: $size-width-3) {
+            flex-direction: row;       
         }
     }
 }
@@ -43,4 +63,9 @@
     padding: 7px;
     display: flex;
     justify-content: center;
+
+    @media (max-width: $size-width-1) {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }

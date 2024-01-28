@@ -42,7 +42,7 @@ export const SkillsScreen = () => {
                         <Grid 
                             key={`skill-${index}`} 
                             item 
-                            xs={ width > 1070 ? 2 : 3 }
+                            xs={ width > 1070 ? 2 : ( width > 600 ? 3 : 4 ) }
                         >
                             <div 
                                 className='skill-item' 

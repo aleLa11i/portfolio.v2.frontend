@@ -25,20 +25,26 @@
         justify-content: space-around;
         z-index: 2;
 
-        &:hover{
-            transition: transform 300ms;
-            backdrop-filter: blur(15px);
-            transform: scale(1.2);
-            height: 140%;
-            z-index: 100;
+        @media (max-width: $size-width-3) {
+            height: 100px;
+        }
 
-            .progress-bar{
-                z-index: 50;
-                display: flex;
-            }
+        @media (max-width > $size-width-1) {
+            &:hover{
+                transition: transform 300ms;
+                backdrop-filter: blur(15px);
+                transform: scale(1.2);
+                height: 140%;
+                z-index: 100;
     
-            .skill-progress{
-                display: flex;
+                .progress-bar{
+                    z-index: 50;
+                    display: flex;
+                }
+        
+                .skill-progress{
+                    display: flex;
+                }
             }
         }
 

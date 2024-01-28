@@ -29,11 +29,11 @@ export const Footer = () => {
                 className='footer-section-2'
             >
                 <div>
-                    <LocationOnIcon style={{marginRight:'20px'}}/>
+                    <LocationOnIcon className='icon'/>
                     <h3>Rosario, Santa Fe, Argentina</h3>
                 </div>
                 <div>
-                    <LocalPhoneIcon style={{marginRight:'20px'}}/>
+                    <LocalPhoneIcon className='icon'/>
                     <h3>+54 9 341 349-3683</h3>
                 </div>
             </div>
