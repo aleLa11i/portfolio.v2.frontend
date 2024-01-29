@@ -18,7 +18,7 @@ export const HomeScreen = () => {
                 className='button-icon'
             >
                 <a 
-                    href='https://drive.google.com/file/d/1WEfsl-YfA3KhMkUg8rGVlzhxYZkocQz9/view?usp=sharing'
+                    href='https://drive.google.com/file/d/19Xa3BESBnUQ2Y5FfzBOtKtUzPEsMXpWQ/view?usp=drive_link'
                     target='blank'
                     className='button-cv btn-custom'
                 ><span>CV</span><i></i></a>
