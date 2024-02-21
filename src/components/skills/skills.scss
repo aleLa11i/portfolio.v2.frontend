@@ -29,7 +29,7 @@
             height: 100px;
         }
 
-        @media (max-width > $size-width-1) {
+        @media (min-width: $size-width-1) {
             &:hover{
                 transition: transform 300ms;
                 backdrop-filter: blur(15px);
