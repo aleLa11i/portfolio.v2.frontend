@@ -1,7 +1,8 @@
-import sertic from '../../assets/projects/sertic.png';
-import todoapp from '../../assets/projects/todoapp.png';
-import went2app from '../../assets/projects/went2app.png';
-import calendar from '../../assets/projects/calendar.png';
+import sertic from '../../../assets/projects/sertic.png';
+import todoapp from '../../../assets/projects/todoapp.png';
+import went2app from '../../../assets/projects/went2app.png';
+import calendar from '../../../assets/projects/calendar.png';
+import mareoenvios from '../../../assets/projects/mareoenvios.png';
 
 export const data = [
     {
@@ -14,7 +15,7 @@ export const data = [
                 href:'https://alela11i.github.io/TODOapp/'
             },
             {
-                name:'codigo',
+                name:'repositorio',
                 href:'https://github.com/aleLa11i/TODOapp.git'
             }
         ],
@@ -76,5 +77,22 @@ export const data = [
         ],
         image: calendar,
         side: 'left'
+    },
+    {
+        name: 'mereo-envios',
+        title:'Mareo Envios App',
+        desc: 'Proyecto presentado para un examen tecnico. El examen consta de una aplicacion Spring Boot que maneja el uso de hilos a partir de algunos requerimientos, se deja en adjunto las consignas para mas informacion. Tambien se deja el repositorio en github. Es una aplicacion unicamente backend con una pequeña base de datos.',
+        buttons: [
+            {
+                name:'repositorio',
+                href:'https://github.com/aleLa11i/mareoenvios'
+            },
+            {
+                name:'consigna',
+                href:'https://drive.google.com/drive/folders/1msVEFLoHY5czQE01qtfr2IahXJl3bSoG'
+            }
+        ],
+        image: mareoenvios,
+        side: 'right'
     }
 ]

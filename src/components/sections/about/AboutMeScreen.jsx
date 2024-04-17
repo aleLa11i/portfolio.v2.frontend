@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import me from "../../assets/me/me2.png"
+import me from "../../../assets/me/me2.png"
 
 export const AboutMeScreen = () => {
     const [showDescription, setShowDescription] = useState(false)

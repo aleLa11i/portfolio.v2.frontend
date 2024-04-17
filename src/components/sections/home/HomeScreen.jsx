@@ -1,6 +1,6 @@
 import React from 'react';
-import icon from '../../assets/favicon.ico';
-import face from '../../assets/me/me.png'
+import icon from '../../../assets/favicon.ico';
+import face from '../../../assets/me/me.png'
 
 export const HomeScreen = () => {
     return (

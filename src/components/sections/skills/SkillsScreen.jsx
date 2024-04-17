@@ -1,21 +1,12 @@
 import React, { useState } from 'react';
 import {data} from "./skills";
-import Box from '@mui/material/Box';
-import { styled } from '@mui/material/styles';
-import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
-
-const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-    ...theme.typography.body2,
-    padding: theme.spacing(1),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-}));
+import { useWindowSize } from '../../../hooks/useWindowSize';
 
 export const SkillsScreen = () => {
     const [skillProgress, setSkillProgress] = useState(0);
-    const [skillInterval, setSkillInterval] = useState(null)
+    const [skillInterval, setSkillInterval] = useState(null);
+    const [ width ] = useWindowSize();
 
     const onMouseEnterSkill = (index,percentage) => {
         const progressBar = document.getElementById(`progress-bar-skill-${index}`)
@@ -24,7 +15,7 @@ export const SkillsScreen = () => {
             const computedStyle = getComputedStyle(progressBar);
             const width = parseFloat(computedStyle.getPropertyValue('--width')) || 0 ;
             progressBar.style.setProperty('--width', width + .7)
-            if( Math.ceil(width + .5) < percentage){
+            if( Math.ceil(width + .5) <= percentage){
                 setSkillProgress(Math.ceil(width + .5));
             }
         }, 5));
@@ -37,17 +28,27 @@ export const SkillsScreen = () => {
         clearInterval(skillInterval);
     }
 
+    const onClickSkill = (href) =>{
+        const newTab = window.open(href, '_blank');
+        newTab.focus();
+    }
+
     return (
         <section className='skills' id='skills'>
                 <h2>Habilidades</h2>
-                <Grid container spacing={2}>
+                <Grid style={{marginTop:"20px"}} container spacing={2}>
                 {
                     data?.map( (skill, index) => (
-                        <Grid item xs={2}>
-                            <Item 
+                        <Grid 
+                            key={`skill-${index}`} 
+                            item 
+                            xs={ width > 1070 ? 2 : ( width > 600 ? 3 : 4 ) }
+                        >
+                            <div 
                                 className='skill-item' 
                                 onMouseEnter={ () => onMouseEnterSkill(index, skill.percentage)}
                                 onMouseLeave={ () => onMouseLeaveSkill(index)}
+                                onClick={ () => onClickSkill( skill?.href ) }
                             >
                                 <img
                                     className='skill-img'
@@ -55,9 +56,14 @@ export const SkillsScreen = () => {
                                     alt={`skill-${index}`} 
                                 />
                                 <h3>{skill.name}</h3>
-                                <h4 className='skill-progress'>{skillProgress}%</h4>
+                                <div 
+                                    className='skill-progress'
+                                >
+                                    <h4>{skillProgress}%</h4>
+                                </div>
                                 <div className='progress-bar' id={`progress-bar-skill-${index}`} style={{"--width": 2,"--max-width": skill.percentage}}></div>
-                            </Item>
+                                <i></i>
+                            </div>
                         </Grid>
                     ))
                 }

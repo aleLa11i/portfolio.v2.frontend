@@ -1,5 +1,5 @@
 import React from 'react';
-import notebook from '../../assets/projects/notebook.png';
+import notebook from '../../../assets/projects/notebook.png';
 import { data } from './projects';
 
 export const ProjectsScreen = () => {
